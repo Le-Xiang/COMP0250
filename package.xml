@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cw1_team_20</name> <!-- change your team name here! -->
+  <version>0.0.0</version>
+  <description>
+  A package template for the cw1 solution. The name should be changed to the team 
+  number, for example team 3 would change the name to cw1_team_3.
+  </description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <maintainer email="luke@todo.todo">luke</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <license>MIT</license>
+
+  <!-- The *depend tags are used to specify dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- 基本 ROS 依赖 -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <!-- MoveIt! 相关依赖 -->
+  <depend>moveit_core</depend>
+  <depend>moveit_ros_planning_interface</depend>
+
+  <!-- TF & 几何消息 -->
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- 任务 1 需要的额外依赖 -->
+  <depend>message_generation</depend>
+  <depend>message_runtime</depend>
+  <depend>pcl_ros</depend>
+  <depend>cw1_world_spawner</depend>
+
+  <!-- 其他工具可以在这里请求额外信息 -->
+  <export>
+  </export>
+</package>
+
